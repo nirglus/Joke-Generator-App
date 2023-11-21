@@ -1,0 +1,14 @@
+{
+  "name": "joke-generator-app",
+  "version": "1.0.0",
+  "description": "Joke Generator App made using JokesAPI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nirglus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
