@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Joke Generator App made using JokesAPI",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
