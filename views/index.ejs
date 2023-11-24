@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+</head>
+<body>
+    <section>
+        <form action="/" method="POST">
+            <label for="langInp">Select language</label>
+            <select name="langSel" id="langInp">
+                <option value="en">en - English</option>
+                <option value="cs">cs - Czech</option>
+                <option value="de">de - German</option>
+                <option value="fr">fr - French</option>
+                <option value="es">es - Spanish</option>
+                <option value="pt">pt - Portuguese</option>
+            </select>
+            <label for="jokeType">Select at least one joke type:</label>
+            <div id="jokeType">
+                <label for="single">single</label>
+                <input type="checkbox" name="single">
+                <label for="twopart">twopart</label>
+                <input type="checkbox" name="twopart">
+            </div>
+            <label for="searchStr">Search for a joke that contains this string:</label>
+            <input type="text" id="searchStr" name="searchStr" placeholder="(optional)">
+            <label for="jokeAmount">Amount of jokes:</label>
+            <input type="number" name="jokesAmount" id="jokesAmount">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+</body>
+</html>
