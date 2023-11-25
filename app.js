@@ -14,6 +14,7 @@ app.get("/", (req, res) =>{
 
 app.post("/", async (req, res) =>{
     console.log(req.body);
+    let lang = req.body.langSel == "en" ? "" : "lang=" + req.body.langSel; 
     const singleChecked = req.body.type === "single";
     const twopartChecked = req.body.type === "twopart";
     let type = "";
@@ -22,6 +23,8 @@ app.post("/", async (req, res) =>{
     } else if (!singleChecked && twopartChecked) {
       type = "type=twopart";
     }
+    let string = req.body.searchStr ? "contains=" + req.body.searchStr : "";
+    let amount = req.body.jokesAmount>1 ? "amount=" + req.body.jokesAmount : "";
     try {
         const result = await axios.get(API_URL + "")
     } catch (error) {
